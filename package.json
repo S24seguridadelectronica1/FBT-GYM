@@ -6,12 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export",
+    "deploy": "npm run build && npm run export && gh-pages -d out"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
     "next": "14.2.11",
     "react": "^18",
-    "react-dom": "^18"
-  }
+    "react-dom": "^18",
+    "gh-pages": "^5.0.0"
+  },
+  "homepage": "https://s24h123.github.io/FBT-GYM"
 }

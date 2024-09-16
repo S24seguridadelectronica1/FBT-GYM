@@ -20,7 +20,7 @@ export default function Banner() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={`${assetPrefix}1.png`}  // Usa el prefijo del asset aquí
+            src={`${process.env.NODE_ENV === 'production' ? '/FBT-GYM/1.png' : '/1.png'}`}
             alt="Banner"
           />
           <Carousel.Caption>

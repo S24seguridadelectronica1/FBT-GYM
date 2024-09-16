@@ -11,13 +11,16 @@ export default function Banner() {
   const handleOpenModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
 
+  // Determina el prefijo basado en el entorno
+  const assetPrefix = process.env.NODE_ENV === 'production' ? '/FBT-GYM/' : '';
+
   return (
     <>
       <Carousel>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="/1.png"  // Usa la ruta correcta aquí
+            src={`${assetPrefix}1.png`}  // Usa el prefijo del asset aquí
             alt="Banner"
           />
           <Carousel.Caption>

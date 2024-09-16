@@ -8,6 +8,7 @@ const nextConfig = {
     config.resolve.fallback = { fs: false };
     return config;
   },
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/FBT-GYM/' : '',
 };
 
 export default nextConfig;

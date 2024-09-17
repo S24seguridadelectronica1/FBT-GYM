@@ -9,7 +9,6 @@ const nextConfig = {
     return config;
   },
   assetPrefix: process.env.NODE_ENV === 'production' ? '/FBT-GYM/' : '',
-  swcMinify: false, // Desactiva la minificación de JavaScript
 };
 
 export default nextConfig;
